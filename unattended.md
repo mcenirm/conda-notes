@@ -22,7 +22,7 @@ https://docs.anaconda.com/anaconda/install/silent-mode/#installing-in-silent-mod
 start /wait "" %cd%\Miniconda2-4.6.14-Windows-x86_64.exe /InstallationType=JustMe /AddToPath=0 /S /D=%cd%\mc2
 ```
 
-Unfortunately, this also places shortcuts under `%AppData%\Microsoft\Windows\Start Menu\Programs\Anaconda2 (64-bit)`.
+Unfortunately, this adds Miniconda2 to the list of installed programs, and creates shortcuts under `%AppData%\Microsoft\Windows\Start Menu\Programs\Anaconda2 (64-bit)`.
 
 * `Anaconda Prompt`
     ```cmd
