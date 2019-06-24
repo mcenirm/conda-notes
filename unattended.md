@@ -33,3 +33,21 @@ Unfortunately, this adds Miniconda2 to the list of installed programs, and creat
     ```cmd
     %windir%\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& '«workarea»\mc2\shell\condabin\conda-hook.ps1' ; conda activate '«workarea»\mc2' "
     ```
+
+## Install Miniconda3 in work area
+
+```cmd
+start /wait "" %cd%\Miniconda3-4.6.14-Windows-x86_64.exe /InstallationType=JustMe /AddToPath=0 /S /D=%cd%\mc3
+```
+
+Unfortunately, this adds Miniconda3 to the list of installed programs, and creates shortcuts under `%AppData%\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit)`.
+
+* `Anaconda Prompt`
+    ```cmd
+    %windir%\System32\cmd.exe "/K" «workarea»\mc3\Scripts\activate.bat «workarea»\mc3
+    ```
+
+* `Anaconda Powershell Prompt`
+    ```cmd
+    %windir%\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy ByPass -NoExit -Command "& '«workarea»\mc3\shell\condabin\conda-hook.ps1' ; conda activate '«workarea»\mc3' "
+    ```
