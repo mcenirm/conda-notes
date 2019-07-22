@@ -13,6 +13,38 @@ https://docs.anaconda.com/anaconda/install/silent-mode/#installing-in-silent-mod
 * `/S` - Install in silent mode.
 * `/D=<installation path>` - Destination installation path. Must be the last argument. Do not wrap in quotation marks. Required if you use `/S`.
 
+# Usage from `/?` flag
+
+```
+---------------------------
+Miniconda3 4.6.14 (64-bit) Setup
+---------------------------
+Usage: Miniconda3-4.6.14-Windows-x86_64.exe [options]
+Options:
+
+/InstallationType=AllUsers [default: JustMe]
+
+/AddToPath=[0|1] [default: 0]
+
+/RegisterPython=[0|1] [default: AllUsers: 1, JustMe: 0]
+
+/NoRegistry=[0|1] [default: AllUsers: 0, JustMe: 0]
+
+Examples:
+Install for all users, but don't add to PATH env var:
+Miniconda3-4.6.14-Windows-x86_64.exe /InstallationType=AllUsers
+
+Install for just me, add to PATH and register as system Python:
+Miniconda3-4.6.14-Windows-x86_64.exe /RegisterPython=1 /AddToPath=1
+
+Install for just me, with no registry modification (for CI):
+Miniconda3-4.6.14-Windows-x86_64.exe /NoRegistry=1
+
+---------------------------
+OK   
+---------------------------
+```
+
 
 # Examples
 
